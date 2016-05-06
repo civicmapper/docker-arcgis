@@ -12,7 +12,6 @@ docker-machine create\
  --virtualbox-memory 8192\
  --virtualbox-cpu-count 4\
  --virtualbox-disk-size 32768\
- --virtualbox-no-vtx-check\
  arcgis
 ```
 
@@ -39,7 +38,7 @@ docker build\
  --force-rm=true\
  --ulimit nofile=65535:65535\
  --ulimit nproc=25059:25059\
- -t mraad/arcgis .
+ -t {PATH-TO-DIRECTORY-CONTAINING-DOCKERFILE} . 
 ```
 
 Clean dangling images using:
@@ -57,7 +56,7 @@ docker run\
  --memory-swappiness=0\
  -p 6080:6080\
  -p 6443:6443\
- mraad/arcgis
+ {PATH-TO-DIRECTORY-CONTAINING-DOCKERFILE}
 ```
 
 ## Create A New Site
