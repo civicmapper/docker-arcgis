@@ -38,7 +38,7 @@ docker build\
  --force-rm=true\
  --ulimit nofile=65535:65535\
  --ulimit nproc=25059:25059\
- -t {PATH-TO-DIRECTORY-CONTAINING-DOCKERFILE} . 
+ -t arcgis . 
 ```
 
 Clean dangling images using:
@@ -56,7 +56,7 @@ docker run\
  --memory-swappiness=0\
  -p 6080:6080\
  -p 6443:6443\
- {PATH-TO-DIRECTORY-CONTAINING-DOCKERFILE}
+ arcgis
 ```
 
 ## Create A New Site
