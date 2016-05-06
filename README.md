@@ -15,7 +15,7 @@ docker-machine create\
  arcgis
 ```
 
-For convenience, update your `/etc/hosts` file so you can access the container by its hostname `arcgis`.
+For convenience, update your Hosts file (`/etc/hosts` on *nix and `C:\Windows\System32\drivers\etc\hosts` on Windows) so you can access the container by its hostname `arcgis`.
 
 ```bash
 echo "$(docker-machine ip arcgis) arcgis" >> /etc/hosts
